@@ -1,0 +1,33 @@
+import turtle
+
+sc = turtle.Screen()
+sc.bgcolor("black")
+
+#create the sun
+
+sun = turtle.Turtle()
+sun.shape("circle")
+sun.color("yellow")
+
+#create the planet
+
+planet = turtle.Turtle()
+planet.shape("circle")
+
+n = 50
+for planets in ["brown","yellow","blue","red","orange","white","green","purple"]:
+  planet.color(planets)
+  planet.penup()
+  planet.speed(5)
+  planet.goto(0,n)
+  n = n + 40
+
+  for i in range(360):
+    planet.right(1)
+    planet.penup()
+    planet.forward(3)
+    planet.pendown()
+    
+  
+ 
+  
